@@ -1,6 +1,6 @@
 from core_gameplay.board import Board
 from core_gameplay.ai import AI
-from checkers_gui import CheckersGUI
+from checkers_gui.checkers_gui import CheckersGUI
 
 # Initialize the game board
 board = Board()
