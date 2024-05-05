@@ -1,6 +1,6 @@
 from core_gameplay.board import Board
 from core_gameplay.ai import AI
-from checkers_gui.checkers_gui import CheckersGUI
+from checkers_gui.checkers_gui import CheckersGUI  # Updated import path
 
 # Initialize the game board
 board = Board()
@@ -8,8 +8,8 @@ board = Board()
 # Initialize the AI player
 ai_player = AI(depth=3)  # Adjust depth for desired difficulty
 
-# Create an instance of the CheckersGUI class and run the GUI
-gui = CheckersGUI()
+# Create an instance of the CheckersGUI class and run the GUI, passing the game board
+gui = CheckersGUI(board.board)  # Pass the game board to the constructor
 gui.run()
 
 # Define constants for player IDs
